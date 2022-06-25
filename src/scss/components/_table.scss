@@ -1,0 +1,36 @@
+@import "../variables";
+
+.table {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem 0.8rem;
+    transition: $transition-background;
+
+    &_disabled {
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: $light-grey-color;
+    }
+
+    &-item {
+      &_stocked {
+        color: $red-color;
+      }
+    }
+  }
+  &__category {
+    text-transform: uppercase;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    padding: 0.4rem 0.8rem;
+
+    transition: $transition-background;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}

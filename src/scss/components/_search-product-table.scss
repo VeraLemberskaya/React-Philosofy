@@ -1,0 +1,14 @@
+@import "../variables";
+
+.search-product-table {
+  max-width: 22rem;
+  width: 22rem;
+  height: 27rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.5rem;
+  &__text {
+    text-align: center;
+    color: #0fc0b6;
+  }
+}

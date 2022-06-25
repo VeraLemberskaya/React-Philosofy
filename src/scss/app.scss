@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "variables";
+@import "normalize";
+@import "components/all";
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  width: 100%;
+  background: $placeholder-color;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
